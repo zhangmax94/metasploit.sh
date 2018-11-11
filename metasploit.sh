@@ -26,7 +26,7 @@ mv $msfpath/metasploit-framework-$msfvar $msfpath/metasploit-framework
 cd $msfpath/metasploit-framework
 gem install bundler
 
-cd $msfpath/metasploit-framework
+
 gem install nokogiri -v '1.8.4'  -- --use-system-libraries
 bundle install -j5
 
@@ -52,6 +52,6 @@ pg_ctl -D $PREFIX/var/lib/postgresql start
 createuser msf
 createdb msf_database
 
-rm $msfpath/$msfvar.tar.gz
 
-echo "you can directly use msfvenom or msfconsole rather than ./msfvenom or ./msfconsole as they are symlinked to $PREFIX/bin"
+
+echo "ended"
